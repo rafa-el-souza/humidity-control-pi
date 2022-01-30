@@ -1,9 +1,12 @@
 const express = require('express');
 const gpio = require('./gpio');
+const { controllHumidity } = require('./humidityControll');
 
 const app = express();
 
 const PORT = 3001;
+
+setInterval(controllHumidity, 20000);
 
 app.get('/', (req, res) => {
   gpio.logAll();
