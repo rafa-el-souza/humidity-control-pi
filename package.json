@@ -1,0 +1,31 @@
+{
+  "name": "humidity-control-pi",
+  "version": "1.0.0",
+  "description": "A RPi based NodeJS server for humidity control.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafaelmvsouza/humidity-control-pi.git"
+  },
+  "keywords": [
+    "humidity"
+  ],
+  "author": "Rafael Souza",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/rafaelmvsouza/humidity-control-pi/issues"
+  },
+  "homepage": "https://github.com/rafaelmvsouza/humidity-control-pi#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "pigpio": "^3.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
